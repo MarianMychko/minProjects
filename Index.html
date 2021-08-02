@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task 2</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Testimonials</h1>
+
+    <div class="container">
+        <div class="indicator">
+            <span class="button active"></span>
+            <span class="button"></span>
+            <span class="button"></span>
+            <span class="button"></span>
+        </div>
+        <div class="testimonial">
+            <div class="slide-row" id="slide">
+                <div class="slide-col">
+                <div class="user-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Totam dolore aut nihil culpa rem.
+                         Deserunt consectetur alias voluptas quasi reprehenderit error ea odit quis,
+                          architecto voluptatum laudantium explicabo corporis at!</p>
+                    <h3>Sara</h3>
+                    <p>Zara Inc.</p>
+                </div>
+                <div class="user-img ">
+                    <img src="./img/Sara.jpg" alt=" ">
+                </div>
+                    </div>
+                <div class="slide-col">
+                <div class="user-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Totam dolore aut nihil culpa rem.
+                         Deserunt consectetur alias voluptas quasi reprehenderit error ea odit quis,
+                          architecto voluptatum laudantium explicabo corporis at!</p>
+                    <h3>Nadin</h3>
+                    <p>Zara Inc.</p>
+                </div>
+                <div class="user-img">
+                    <img src="./img/Nadin.jpg" alt=" ">
+                </div>
+                    </div>
+                <div class="slide-col">
+                <div class="user-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Totam dolore aut nihil culpa rem.
+                         Deserunt consectetur alias voluptas quasi reprehenderit error ea odit quis,
+                          architecto voluptatum laudantium explicabo corporis at!</p>
+                    <h3>Nata</h3>
+                    <p>Zara Inc.</p>
+                </div>
+                <div class="user-img">
+                    <img src="./img/Nata.jpg" alt=" ">
+                </div>
+                    </div>
+                <div class="slide-col">
+                <div class="user-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Totam dolore aut nihil culpa rem.
+                         Deserunt consectetur alias voluptas quasi reprehenderit error ea odit quis,
+                          architecto voluptatum laudantium explicabo corporis at!</p>
+                    <h3>Kara</h3>
+                    <p>Zara Inc.</p>
+                </div>
+                <div class="user-img">
+                    <img src="./img/Kara.jpg" alt=" ">
+                </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+    
+    var button = document.getElementsByClassName("button")
+    var slide = document.getElementById("slide")
+
+button[0].onclick = function() {
+    slide.style.transform = "translateX(0px)"
+    for (i=0;i<4;i++){
+        button[i].classList.remove("active")
+    }
+    this.classList.add("active")
+}
+button[1].onclick = function() {
+    slide.style.transform = "translateX(-800px)"
+    for (i=0;i<4;i++){
+        button[i].classList.remove("active")
+    }
+    this.classList.add("active")
+
+}
+button[2].onclick = function() {
+    slide.style.transform = "translateX(-1600px)"
+    for (i=0;i<4;i++){
+        button[i].classList.remove("active")
+    }
+    this.classList.add("active")
+}
+button[3].onclick = function() {
+    slide.style.transform = "translateX(-2400px)"
+    for (i=0;i<4;i++){
+        button[i].classList.remove("active")
+    }
+    this.classList.add("active")
+}
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: rgb(0,255,178);
+    background: radial-gradient(circle, rgba(0,255,178,1) 1%, rgba(9,120,73,1) 42%, rgba(0,36,1,1) 76%);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: hsl(58, 89%, 64%);
+    text-shadow: 1px 1px 2px coral, 0 0 1em chocolate, 0 0 0.2em chocolate;    cursor: default;
+}
+
+.slide-row {
+    display:  flex;
+    width: 3200px;
+    transition: 0.7s;
+}
+
+.slide-col {
+    width: 800px;
+    height: 380px;
+    position: relative;
+}
+
+.user-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.user-img img {
+    height: 90%;
+    border-radius: 10px;
+}
+
+.user-text {
+    background: rgb(235,178,63);
+    background: radial-gradient(circle, rgba(235,178,63,1) 0%, rgba(237,233,95,1) 100%);
+    width: 320px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: #084605;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.user-text p{
+    font-size: 16px;
+    line-height: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.user-text h3 {
+    margin: 35px 0 5px;
+    color: hsl(100, 100%, 16%);
+    text-shadow: 1px 1px 2px coral, 0 0 1em chocolate, 0 0 0.2em chocolate;    cursor: default;
+}
+
+.container {
+    width: 800px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.indicator {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+
+.button {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: rgb(235,178,63);
+    background: radial-gradient(circle, rgba(235,178,63,1) 0%, rgba(237,233,95,1) 100%);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.active {
+    box-shadow: 2.5px -2.5px coral;
+    width: 40px;
+}
+
+.testimonial {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
